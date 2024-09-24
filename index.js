@@ -10,8 +10,8 @@ function onSignIn(googleUser) {
 
     // Redirect to another site after sign-in
     setTimeout(function() {
-        window.location.href = "https://myprofile-olive-one.vercel.app/"; // Change this to your target URL
-    }, 2000); // Delay of 2 seconds to allow displaying user data briefly before redirection
+        window.location.href = "https://shashibhushan.vercel.app/profile.html"; // Change this to your target URL
+    }, 1000); // Delay of 2 seconds to allow displaying user data briefly before redirection
 }
 
 function signOut() {

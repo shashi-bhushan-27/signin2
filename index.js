@@ -10,15 +10,7 @@ function onSignIn(googleUser) {
 
     // Redirect to another site after sign-in
     setTimeout(function() {
-        window.location.href = "https://shashibhushan.vercel.app/profile.html"; // Change this to your target URL
+        console.log("Redirecting to profile page..."); // Debug log
+        window.location.href = "https://shashibhushan.vercel.app/profile.html"; // Your target URL
     }, 1000); // Delay of 1 second to allow displaying user data briefly before redirection
-}
-
-function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-        alert("You have been signed out successfully");
-        $(".g-signin2").css("display", "block");
-        $(".data").css("display", "none");
-    });
 }
